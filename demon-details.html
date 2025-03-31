@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demon Details</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation (same as index.html) -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-gray-900">Demon List</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+                    <a href="login.html" class="text-gray-700 hover:text-blue-600">Login</a>
+                    <a href="admin.html" class="text-gray-700 hover:text-blue-600">Admin</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Demon Header -->
+    <div class="bg-blue-600 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/3 mb-6 md:mb-0">
+                    <div id="demonImage" class="h-64 bg-gray-300 rounded-lg flex items-center justify-center">
+                        <i class="fas fa-mountain text-6xl text-gray-500"></i>
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h1 id="demonName" class="text-4xl font-bold mb-2">Bloodbath</h1>
+                    <div class="flex items-center mb-4">
+                        <div id="demonStars" class="flex mr-4">
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-yellow-400"><i class="fas fa-star"></i></span>
+                            <span class="text-gray-300"><i class="fas fa-star"></i></span>
+                        </div>
+                        <span class="text-lg">Difficulty: <span id="demonDifficulty">4</span>/5</span>
+                    </div>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div>
+                            <p class="text-blue-200">Creator</p>
+                            <p id="demonCreator" class="text-white">Riot</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-200">Published</p>
+                            <p id="demonPublished" class="text-white">January 15, 2014</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-200">Players</p>
+                            <p id="demonPlayers" class="text-white">1,234 verified</p>
+                        </div>
+                        <div>
+                            <p class="text-blue-200">ID</p>
+                            <p class="text-white">#1</p>
+                        </div>
+                    </div>
+                    <a href="#" class="inline-block px-6 py-2 bg-white text-blue-600 rounded-lg font-medium hover:bg-gray-100">Watch Video</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="flex flex-col lg:flex-row gap-8">
+            <!-- Left Column -->
+            <div class="lg:w-2/3">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h2 class="text-2xl font-bold mb-4">Description</h2>
+                    <p id="demonDescription" class="text-gray-700">
+                        Bloodbath is one of the most iconic demon levels in Geometry Dash history. 
+                        Created by Riot, it features extremely tight wave sections and difficult ship sequences.
+                        The level is known for its dark red color scheme and intense gameplay.
+                        Many players consider this level to be the benchmark for extreme demon difficulty.
+                        It has been verified by numerous top players and remains a popular challenge.
+                    </p>
+                </div>
+
+                <!-- Comments Section -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-2xl font-bold mb-4">Comments</h2>
+                    <div class="mb-6">
+                        <textarea class="w-full px-4 py-2 border rounded-lg focus:ring-blue-500 focus:border-blue-500" rows="3" placeholder="Add a comment..."></textarea>
+                        <button class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">Post Comment</button>
+                    </div>
+                    <div class="space-y-4">
+                        <!-- Comment 1 -->
+                        <div class="border-b pb-4">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-gray-300 rounded-full mr-2"></div>
+                                <span class="font-medium">Player123</span>
+                                <span class="text-gray-500 text-sm ml-2">2 days ago</span>
+                            </div>
+                            <p class="text-gray-700">
+                                This level took me 3 months to beat! The wave at 72% is brutal.
+                            </p>
+                        </div>
+                        <!-- Comment 2 -->
+                        <div class="border-b pb-4">
+                            <div class="flex items-center mb-2">
+                                <div class="w-8 h-8 bg-gray-300 rounded-full mr-2"></div>
+                                <span class="font-medium">GDPro</span>
+                                <span class="text-gray-500 text-sm ml-2">1 week ago</span>
+                            </div>
+                            <p class="text-gray-700">
+                                Classic demon, still holds up today. The ship part at 45% is my favorite section.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="lg:w-1/3">
+                <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                    <h2 class="text-xl font-bold mb-4">Statistics</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="text-gray-600">Completion Rate</p>
+                            <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                <div class="bg-blue-600 h-2.5 rounded-full" style="width: 5%"></div>
+                            </div>
+                            <p class="text-sm text-gray-500 mt-1">5% of attempts succeed</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Average Attempts</p>
+                            <p class="text-lg">12,345</p>
+                        </div>
+                        <div>
+                            <p class="text-gray-600">Record Holder</p>
+                            <p class="text-lg">Zoink</p>
+                            <p class="text-sm text-gray-500">100% in 1,234 attempts</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h2 class="text-xl font-bold mb-4">Similar Demons</h2>
+                    <div class="space-y-3">
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-100 rounded-lg">
+                            <div class="w-12 h-12 bg-gray-300 rounded mr-3 flex items-center justify-center">
+                                <i class="fas fa-fire text-gray-500"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Cataclysm</p>
+                                <p class="text-sm text-gray-500">Difficulty: 5/5</p>
+                            </div>
+                        </a>
+                        <a href="#" class="flex items-center p-2 hover:bg-gray-100 rounded-lg">
+                            <div class="w-12 h-12 bg-gray-300 rounded mr-3 flex items-center justify-center">
+                                <i class="fas fa-skull text-gray-500"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Sakupen Hell</p>
+                                <p class="text-sm text-gray-500">Difficulty: 4/5</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer (same as index.html) -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <h2 class="text-xl font-bold">Demon List</h2>
+                    <p class="text-gray-400">Community-ranked difficult levels</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="mt-8 text-center text-gray-400 text-sm">
+                <p>© 2023 Demon List. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
